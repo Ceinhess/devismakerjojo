@@ -1,0 +1,14 @@
+{
+	"client": "Billy",
+	"adresse": "16 avenue du skibidi",
+	"mail": "juan@stable.neigh",
+	"telephone": "066666666666",
+	"date": "2024-09-11",
+	"numDevis": "52",
+	"type": "type-devis",
+	"accompte": "accompte-10",
+	"tva": "TVA-20",
+	"validiteDate": "2024-09-17",
+	"designations": [],
+	"fichier": "Fichier de test 1"
+}

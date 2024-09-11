@@ -1,0 +1,49 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+body {
+    scrollbar-width: none;
+}
+.collapsing {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.wrapper-infos-devis {
+    z-index: 1050;
+}
+
+.infos-devis-form {
+    scrollbar-width: none !important;
+    height: 90vh;
+}
+
+.nav {
+    height: 5vh;
+    z-index: 1050;
+}
+
+.wrapper {
+    height: 95vh;
+    width: 101vw;
+    bottom: 0;
+}
+
+.materiel-item {
+    width: 300px;
+    height: 300px;
+    color: black !important;
+    background-color: white;
+    word-wrap: break-word;
+}
+
+.designation-item {
+    width: 300px;
+    height: 300px;
+    color: black !important;
+    background-color: white;
+    word-wrap: break-word;
+}

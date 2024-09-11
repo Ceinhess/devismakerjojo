@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"nom": "Ampoule LED",
+		"prix": 10
+	},
+	{
+		"id": 2,
+		"nom": "Ampoule à fusion nucléaire",
+		"prix": 7500
+	},
+	{
+		"id": 3,
+		"nom": "Ampoule à jojo",
+		"prix": 69
+	},
+	{
+		"id": 4,
+		"nom": "Ampoule Couille™",
+		"prix": 8.69
+	}
+]

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Devis Maker</title>
+    
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="css/style.css">
+<body>
+
+    <!-- NavBar en haut-->
+<header class="container-fluid nav bg-primary bg-gradient p-1 fixed-top">
+
+    <!-- Bouton menu infos devis-->
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevisMenu" aria-expanded="false" aria-controls="collapseDevisMenu">
+        Doc...
+    </button>
+
+    <!-- Bouton actions ajouter-->
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ajouter...
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item button" href="" data-bs-toggle="modal" data-bs-target="#staticBackdropMateriel">Materiel...</a></li>
+            <li><a class="dropdown-item button" href="#">Designation...</a></li>
+        </ul>
+    </div>
+
+
+</header>
+<main>
+    <!-- Menu des infos devis -->
+    <section class="wrapper-infos-devis collapse col-3 shadow-lg m-0 p-3 h-100 fixed-top bg-white" id="collapseDevisMenu">
+
+        <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex justify-content-between">
+                <h2> Informations générales: </h2>
+                <button class="btn-close p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevisMenu" aria-expanded="false" aria-controls="collapseDevisMenu">
+                    
+                </button>
+
+            </div>
+            
+        </div>
+
+        <div class="d-flex justify-content-between">
+
+
+        </div>
+
+        <form class="infos-devis-form d-flex flex-column gap-5 overflow-scroll">
+            <div>
+                <legend>Charger un devis:</legend>
+                
+                <div class="dropdown d-flex gap-2 m-2">
+                    <button class="charger-devis-dropdown btn btn-secondary dropdown-toggle w-50" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Choisir un devis
+                    </button>
+                    <ul class="charger-devis-dropdown-menu dropdown-menu">
+                        <select class="charger-devis-select form-select" size="10">
+                            
+                        </select>
+                    </ul>
+                    <button type="submit" class="btn-charger-devis btn btn-primary w-50">Charger le devis</button>
+
+                </div>
+            </div>
+            <fieldset class="d-flex flex-column">
+                <legend>Informations Devis</legend>
+                Nom du fichier: <br>
+                <input type="text" name="nom-fichier" class="flex-grow"><br>
+
+
+            </fieldset>
+            <fieldset class="d-flex flex-column">
+                <legend>Informations Client</legend>
+
+                Client: <br>
+                <input type="text" name="client" class="flex-grow"><br>
+
+                Adresse: <br>
+                <input type="text" name="client-adresse" class="flex-grow"><br>
+
+                Mail: <br>
+                <input type="mail" name="client-mail" class="flex-grow"><br>
+
+                Numero: <br>
+                <input type="text" name="client-num" class="flex-grow"><br>
+
+                Date: <br>
+                <input type="date" name="date-devis"><br>
+
+                N° de devis: <br>
+                <input type="text" name="num-devis"><br>
+
+                Type:<br>
+                <div class="d-flex flex-column justify-content-start">
+                    <div>
+                        <input type="radio" id="type-devis" name="type-valeur">
+                        <label for="type-devis">Devis</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="type-facture" name="type-valeur">
+                        <label for="type-facture">Facture</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="type-accompte" name="type-valeur">
+                        <label for="type-accompte">Accompte</label>
+                    </div>
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Information Prestataire:</legend>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        Accompte:
+                        <div>
+                            <input type="radio" id="accompte-50" name="accompte-valeur">
+                            <label for="accompte-50">Accompte 50%</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="accompte-40" name="accompte-valeur">
+                            <label for="accompte-40">Accompte 40%</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="accompte-10" name="accompte-valeur">
+                            <label for="accompte-10">Accompte 10%</label>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column justify-content-start">
+                        TVA:
+                        <div>
+                            <input type="radio" id="TVA-5-5" name="TVA-valeur">
+                            <label for="TVA-5-5">TVA 5.5%</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="TVA-10" name="TVA-valeur">
+                            <label for="TVA-10">TVA 10%</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="TVA-20" name="TVA-valeur">
+                            <label for="TVA-20">TVA 20%</label>
+                        </div>
+                    </div>
+
+                    Validité du devis: <br>
+                    <input type="date" name="date-validite-devis"><br>
+
+
+            </fieldset>
+
+            <button type="submit" class="btn-infosDoc btn btn-primary">Enregistrer</button>
+            <div class="h-25 bg-white text-white">
+                .
+            </div>
+        </form>
+    </section>
+    
+    <!-- Menu d'ajout Materiel -->
+    <div class="modal-add-materiel modal fade" id="staticBackdropMateriel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropMaterielLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <form class="form-add-materiel modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropMaterielLabel">Ajouter un nouveau Materiel:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                Nom: <br>
+                <input type="text" name="nom-add-materiel" class="flex-grow"><br>
+
+                Prix: <br>
+                <input type="number" step="0.01" min="0" name="prix-add-materiel" class="flex-grow"><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="submit" class="btn-add-materiel btn btn-primary">Ajouter</button>
+            </div>
+        </form>
+        </div>
+    </div>
+  
+
+    <!-- UI principale-->
+    <div class="wrapper container-fluid p-0 bg-dark row fixed-bottom">
+        <!-- Menu à gauche-->
+        <div class="menu-folders col-3 col-lg-2 d-flex flex-column h-100 shadow-lg p-2 gap-2 start-0">
+            <button class="btn-materiel btn btn-secondary w-100">
+                Materiel
+            </button>
+            <button class="btn-designation btn btn-secondary w-100">
+                Designations
+            </button>
+
+        </div>
+
+        <!-- Vue principale des objets (materiel + designations)-->
+        <div class="menu-items col-9 col-lg-10 h-100 d-flex flex-wrap p-2 gap-3 overflow-scroll">
+
+
+        </div>
+
+        
+    </div>
+
+
+</main>
+
+
+<script type="module" src="js/materiel.js"></script>
+<script type="module" src="js/designation.js"></script>
+
+<script type="module" src="js/devis.js"></script>
+<script type="module" src="js/ui.js"></script>
+
+
+<script src="node_modules/chart.js/dist/chart.umd.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

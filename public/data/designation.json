@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "nom": "Duo d'ampoules",
+        "materiels": [1,2]
+
+    },
+    {
+        "id": 1,
+        "nom": "Trio d'ampoules",
+        "materiels": [1,2,3]
+
+    }
+]
