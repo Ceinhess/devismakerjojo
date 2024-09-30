@@ -2,21 +2,66 @@
 	{
 		"id": 1,
 		"nom": "Ampoule LED",
-		"prix": 10
+		"prix": "5"
 	},
 	{
 		"id": 2,
-		"nom": "Ampoule à fusion nucléaire",
-		"prix": 7500
+		"nom": "Cable GIGATEUB",
+		"prix": "43.02"
 	},
 	{
 		"id": 3,
-		"nom": "Ampoule à jojo",
-		"prix": 69
+		"nom": "interrupteur swag",
+		"prix": "1.99"
 	},
 	{
 		"id": 4,
-		"nom": "Ampoule Couille™",
-		"prix": 8.69
+		"nom": "interrupteur pas swag :(",
+		"prix": "399.99"
+	},
+	{
+		"id": 6,
+		"nom": "SUPRALIGHT (eco)",
+		"prix": "49.99"
+	},
+	{
+		"id": 9,
+		"nom": "Prise",
+		"prix": 2.25
+	},
+	{
+		"id": 10,
+		"nom": "Interrupteur Simple",
+		"prix": "2.27"
+	},
+	{
+		"id": 11,
+		"nom": "Cable (1m)",
+		"prix": "0.74"
+	},
+	{
+		"id": 12,
+		"nom": "Boitier placo",
+		"prix": 0.9
+	},
+	{
+		"id": 13,
+		"nom": "Plaque finition",
+		"prix": 1.03
+	},
+	{
+		"id": 14,
+		"nom": "Plafonnier",
+		"prix": 9.08
+	},
+	{
+		"id": 15,
+		"nom": "qzdqzd",
+		"prix": "0.03"
+	},
+	{
+		"id": 16,
+		"nom": "qzdqzd",
+		"prix": 0.01
 	}
 ]

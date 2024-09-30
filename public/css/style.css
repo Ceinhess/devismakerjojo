@@ -40,10 +40,48 @@ body {
     word-wrap: break-word;
 }
 
+.materiel-item:hover {
+    background-color: rgb(237, 244, 255);
+}
+
+.materiel-item.selected {
+    border: 3px #0d6efd solid;
+    background-color: rgb(237, 244, 255);
+}
+
+
+
 .designation-item {
     width: 300px;
     height: 300px;
     color: black !important;
     background-color: white;
     word-wrap: break-word;
+}
+
+.designation-item:hover {
+    background-color: #f5f2e4;
+}
+
+.designation-item.selected {
+    border: 3px #e2ca60 solid;
+    background-color: #f5f2e4;
+}
+
+.materiel-item-nom {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-height: 25%;
+}
+
+.designation-item-nom {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-height: 25%;
+}
+
+.designation-item-container-materiels {
+    max-height: 85%;
 }

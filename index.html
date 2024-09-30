@@ -25,7 +25,7 @@
         </button>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item button" href="" data-bs-toggle="modal" data-bs-target="#staticBackdropMateriel">Materiel...</a></li>
-            <li><a class="dropdown-item button" href="#">Designation...</a></li>
+            <li><a class="dropdown-item button" href="" data-bs-toggle="modal" data-bs-target="#staticBackdropDesignation">Designation...</a></li>
         </ul>
     </div>
 
@@ -33,11 +33,11 @@
 </header>
 <main>
     <!-- Menu des infos devis -->
-    <section class="wrapper-infos-devis collapse col-3 shadow-lg m-0 p-3 h-100 fixed-top bg-white" id="collapseDevisMenu">
+    <section class="wrapper-infos-devis collapse col-6 shadow-lg m-0 p-3 h-100 fixed-top bg-white" id="collapseDevisMenu">
 
         <div class="d-flex flex-column justify-content-between">
             <div class="d-flex justify-content-between">
-                <h2> Informations générales: </h2>
+                <h2> Devis: </h2>
                 <button class="btn-close p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDevisMenu" aria-expanded="false" aria-controls="collapseDevisMenu">
                     
                 </button>
@@ -161,6 +161,21 @@
 
             </fieldset>
 
+            <fieldset>
+                <legend>Designations du devis: </legend>
+                <div class="wrapper-designations d-flex flex-column p-2 gap-2">
+                    <div class="container-designation d-flex flex-column border border-secondary rounded p-2 gap-3">
+
+                    </div>
+                    <div class="outils-designations">
+                        <button type="button" class="btn-devis-add-des btn btn-primary">+</button>
+                    </div>
+                </div>
+
+
+
+            </fieldset>
+
             <button type="submit" class="btn-infosDoc btn btn-primary">Enregistrer</button>
             <div class="h-25 bg-white text-white">
                 .
@@ -190,12 +205,32 @@
         </form>
         </div>
     </div>
+
+    <!-- Menu d'ajout designation -->
+    <div class="modal-add-designation modal fade" id="staticBackdropDesignation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropDesignationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <form class="form-add-designation modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropDesignationLabel">Ajouter une nouvelle designation:</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+            </div>
+            <div class="modal-body">
+                Nom: <br>
+                <input type="text" name="nom-add-designation" class="flex-grow"><br>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                <button type="submit" class="btn-add-designation btn btn-primary">Ajouter</button>
+            </div>
+        </form>
+        </div>
+    </div>
   
 
     <!-- UI principale-->
     <div class="wrapper container-fluid p-0 bg-dark row fixed-bottom">
         <!-- Menu à gauche-->
-        <div class="menu-folders col-3 col-lg-2 d-flex flex-column h-100 shadow-lg p-2 gap-2 start-0">
+        <div class="menu-folders col-4 col-xl-3 col-xxl-2 d-flex flex-column h-100 shadow-lg p-2 gap-2 start-0 panel-body panel-resizable">
             <button class="btn-materiel btn btn-secondary w-100">
                 Materiel
             </button>
@@ -203,15 +238,21 @@
                 Designations
             </button>
 
+            <div class="proprietes-element-wrapper container d-flex flex-column h-100 text-white m-0 p-0">
+                <h4 class="m-2 ms-3">Propriétés de l'élément</h4>
+                <div class="proprietes-element-container container d-flex flex-column h-75 w-100 text-white overflow-auto m-1 p-1">
+                    <h5 class="proprietes-element-titre">Selectionnez un élément (matériel ou désignation)</h5>
+
+                </div>
+            </div>
+
         </div>
 
         <!-- Vue principale des objets (materiel + designations)-->
-        <div class="menu-items col-9 col-lg-10 h-100 d-flex flex-wrap p-2 gap-3 overflow-scroll">
+        <div class="menu-items col-8 col-xl-9 col-xxl-10 h-100 d-flex flex-wrap justify-content-start align-items-start p-2 gap-3 overflow-scroll">
 
 
         </div>
-
-        
     </div>
 
 

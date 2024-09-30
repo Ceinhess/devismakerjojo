@@ -63,7 +63,18 @@ app.post("/writeMateriels", (req,res) => {
   
 });
 
+app.post("/writeDesignations", (req,res) => {
+  const path = "public/data/designation.json";
+  const data = JSON.stringify(req.body, null, "\t");
+
+  fs.writeFile(path, data, (err) => err && console.error(err));
+
+  return "Designations Sauvegardés !";
+  
+});
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
+

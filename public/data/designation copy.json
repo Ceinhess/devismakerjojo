@@ -1,0 +1,25 @@
+[
+	{
+		"id": 1,
+		"nom": "Duo d'ampoulese",
+		"materiels": [
+			1,
+			3
+		]
+	},
+	{
+		"id": 2,
+		"nom": "Trio d'ampoules Trio d'ampoules Trio d'ampoules Trio d'ampoules Trio d'ampoules Trio d'ampoules Trio d'ampoules Trio d'ampoules Trio d'ampoules",
+		"materiels": []
+	},
+	{
+		"id": 3,
+		"nom": "NOUV",
+		"materiels": []
+	},
+	{
+		"id": 4,
+		"nom": "NOUV",
+		"materiels": []
+	}
+]

@@ -1,0 +1,37 @@
+[
+	{
+		"id": 1,
+		"nom": "Ampoule LED",
+		"prix": 5
+	},
+	{
+		"id": 2,
+		"nom": "Cable GIGATEUB",
+		"prix": 42
+	},
+	{
+		"id": 3,
+		"nom": "interrupteur swag",
+		"prix": 1
+	},
+	{
+		"id": 4,
+		"nom": "interrupteur pas swag :(",
+		"prix": 400
+	},
+	{
+		"id": 5,
+		"nom": "SUPRALIGHT",
+		"prix": 50
+	},
+	{
+		"id": 6,
+		"nom": "SUPRALIGHT (eco)",
+		"prix": 49.99
+	},
+	{
+		"id": 7,
+		"nom": "cache-prise",
+		"prix": 0.99
+	}
+]

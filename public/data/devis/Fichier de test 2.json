@@ -6,17 +6,9 @@
 	"date": "2024-09-11",
 	"numDevis": "52",
 	"type": "type-devis",
-	"accompte": "accompte-50",
+	"accompte": "accompte-10",
 	"tva": "TVA-20",
 	"validiteDate": "2024-09-17",
-	"designations": 
-	[
-		{
-			"id": 0,
-			"desId" : 0,
-			"quantite": 1,
-			"mo":1.5
-		}
-	],
-	"fichier": "Fichier de test 1"
+	"designations": [],
+	"fichier": "Fichier de test 2"
 }

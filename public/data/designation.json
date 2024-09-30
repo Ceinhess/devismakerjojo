@@ -1,14 +1,50 @@
 [
-    {
-        "id": 1,
-        "nom": "Duo d'ampoules",
-        "materiels": [1,2]
-
-    },
-    {
-        "id": 1,
-        "nom": "Trio d'ampoules",
-        "materiels": [1,2,3]
-
-    }
+	{
+		"id": 2,
+		"nom": "Trio d'ampoules",
+		"materiels": [
+			{
+				"id": 1,
+				"quantite": 61
+			},
+			{
+				"id": 4,
+				"quantite": 1
+			},
+			{
+				"id": 6,
+				"quantite": 1
+			}
+		]
+	},
+	{
+		"id": 3,
+		"nom": "3",
+		"materiels": []
+	},
+	{
+		"id": 4,
+		"nom": "4",
+		"materiels": []
+	},
+	{
+		"id": 5,
+		"nom": "5",
+		"materiels": []
+	},
+	{
+		"id": 6,
+		"nom": "6",
+		"materiels": []
+	},
+	{
+		"id": 7,
+		"nom": "7",
+		"materiels": []
+	},
+	{
+		"id": 8,
+		"nom": "8",
+		"materiels": []
+	}
 ]

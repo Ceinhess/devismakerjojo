@@ -1,5 +1,5 @@
 {
-	"client": "Billy",
+	"client": "Billydz",
 	"adresse": "16 avenue du skibidi",
 	"mail": "juan@stable.neigh",
 	"telephone": "066666666666",
@@ -9,14 +9,6 @@
 	"accompte": "accompte-50",
 	"tva": "TVA-20",
 	"validiteDate": "2024-09-17",
-	"designations": 
-	[
-		{
-			"id": 0,
-			"desId" : 0,
-			"quantite": 1,
-			"mo":1.5
-		}
-	],
-	"fichier": "Fichier de test 1"
+	"designations": [],
+	"fichier": "Fichier de test 1z"
 }
